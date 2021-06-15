@@ -1,7 +1,8 @@
 const Hello = {
 	data() {
 		return {
-			message: "hello world"
+			message: "hello world",
+			hint: "This page is loaded @ "+(new Date().toLocaleString())
 		}
 	}
 }

@@ -8,7 +8,9 @@
 	</head>
 	<body>
 		<div id="hello">
-			Message: {{message}}
+			<span v-bind:title="hint">
+				Message: {{message}} (hover on to see hint)
+			</span>
 		</div>
 		<div id="counter">
 			Counter: {{counter}}
