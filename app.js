@@ -4,6 +4,11 @@ const Hello = {
 			message: "hello world",
 			hint: "This page is loaded @ "+(new Date().toLocaleString())
 		}
+	},
+	methods: {
+		reverseMessage() {
+			this.message = this.message.split('').reverse().join('')
+		}
 	}
 }
 
