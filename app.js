@@ -36,10 +36,22 @@ const Counter = {
 Vue.createApp(Counter).mount('#counter')
 
 const Todo = {
+	data() {
+		return {
+			todos: [
+				{text: 'Learn JS'},
+				{text: 'Learn Vue'},
+				{text: '...'}
+			]
+		}
+	}
 }
 
 const TodoApp = Vue.createApp(Todo)
 TodoApp.component('todo-comp', {
-	template: `<li>an item</li>`
+	props: [
+		'data'
+	],
+	template: `<li>{{data.text}}</li>`
 })
 TodoApp.mount('#todo')
