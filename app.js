@@ -51,4 +51,6 @@ TodoApp.component('todo-comp', {
 	template: `<li>{{data.text}}</li>`
 })
 
-TodoApp.mount('#todo')
+const TodoVM = TodoApp.mount('#todo')
+
+console.log(TodoVM.$data)
