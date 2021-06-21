@@ -10,7 +10,7 @@
 		<div id="hello">
 			<input v-model="message" />
 			<br>
-			<span v-bind:title="hint">
+			<span :title="hint">
 				Message: {{message}} (hover on to see hint)
 			</span>
 			<br>
@@ -26,7 +26,7 @@
 		
 		<div id="todo">
 			<ol>
-				<todo-comp v-for="todo in todos" v-bind:data="todo" v-bind:key="todo.id"></todo-comp>
+				<todo-comp v-for="todo in todos" :data="todo" :key="todo.id"></todo-comp>
 			</ol>
 		</div>
 	</body>
