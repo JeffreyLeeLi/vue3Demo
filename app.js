@@ -3,12 +3,7 @@ const Hello = {
 		return {
 			visible: true,
 			message: "hello world",
-			hint: "This page is loaded @ "+(new Date().toLocaleString()),
-			todos: [
-				{text: 'Learn JS'},
-				{text: 'Learn Vue'},
-				{text: '...'}
-			]
+			hint: "This page is loaded @ "+(new Date().toLocaleString())
 		}
 	},
 	methods: {
