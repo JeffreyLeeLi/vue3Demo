@@ -26,7 +26,7 @@
 		
 		<div id="todo">
 			<ol>
-				<todo-comp v-for="todo in todos" :data="todo" :key="todo.id"></todo-comp>
+				<todo-comp v-for="todo of todos" :data="todo" :key="todo.id"></todo-comp>
 			</ol>
 		</div>
 	</body>
