@@ -43,10 +43,12 @@ const TodoOpt = {
 }
 
 const TodoApp = Vue.createApp(TodoOpt)
+
 TodoApp.component('todo-comp', {
 	props: [
 		'data'
 	],
 	template: `<li>{{data.text}}</li>`
 })
+
 TodoApp.mount('#todo')
