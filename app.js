@@ -56,4 +56,6 @@ TodoApp.component('todo-comp', {
 const TodoVM = TodoApp.mount('#todo')
 
 console.log(TodoVM.$data)
+
 TodoVM.todos[2].text="Build Something"
+TodoVM.todos.push({text: "..."})
