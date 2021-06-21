@@ -8,6 +8,8 @@
 	</head>
 	<body>
 		<div id="hello">
+			<input v-model="message" />
+			<br>
 			<span v-bind:title="hint">
 				Message: {{message}} (hover on to see hint)
 			</span>
