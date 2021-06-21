@@ -34,3 +34,12 @@ const Counter = {
 }
 
 Vue.createApp(Counter).mount('#counter')
+
+const Todo = {
+}
+
+const TodoApp = Vue.createApp(Todo)
+TodoApp.component('todo-comp', {
+	template: `<li>an item</li>`
+})
+TodoApp.mount('#todo')
