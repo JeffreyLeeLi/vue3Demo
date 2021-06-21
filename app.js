@@ -34,9 +34,9 @@ const Todo = {
 	data() {
 		return {
 			todos: [
-				{text: 'Learn JS'},
-				{text: 'Learn Vue'},
-				{text: '...'}
+				{id: 0, text: 'Learn JS'},
+				{id: 1, text: 'Learn Vue'},
+				{id: 2, text: '...'}
 			]
 		}
 	}

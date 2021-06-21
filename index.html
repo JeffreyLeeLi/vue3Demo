@@ -26,7 +26,7 @@
 		
 		<div id="todo">
 			<ol>
-				<todo-comp v-for="todo in todos" v-bind:data="todo"></todo-comp>
+				<todo-comp v-for="todo in todos" v-bind:data="todo" v-bind:key="todo.id"></todo-comp>
 			</ol>
 		</div>
 	</body>
