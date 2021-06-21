@@ -1,9 +1,11 @@
 const HelloOpt = {
 	data() {
 		return {
-			visible: true,
-			message: "hello world",
-			hint: "This page is loaded @ "+(new Date().toLocaleString())
+			dataObj: {
+				visible: true,
+				message: "hello world",
+				hint: "This page is loaded @ "+(new Date().toLocaleString())
+			}
 		}
 	},
 	methods: {

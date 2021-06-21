@@ -8,6 +8,9 @@
 	</head>
 	<body>
 		<div id="hello">
+			<ul>
+				<li v-for="value in dataObj">{{value}}</li>
+			</ul>
 			<input v-model="message" />
 			<br>
 			<span :title="hint">
