@@ -1,4 +1,4 @@
-const Hello = {
+const HelloOpt = {
 	data() {
 		return {
 			visible: true,
@@ -13,9 +13,9 @@ const Hello = {
 	}
 }
 
-Vue.createApp(Hello).mount('#hello')
+Vue.createApp(HelloOpt).mount('#hello')
 
-const Counter = {
+const CounterOpt = {
 	data() {
 		return {
 			counter: 0
@@ -28,9 +28,9 @@ const Counter = {
 	}
 }
 
-Vue.createApp(Counter).mount('#counter')
+Vue.createApp(CounterOpt).mount('#counter')
 
-const Todo = {
+const TodoOpt = {
 	data() {
 		return {
 			todos: [
@@ -42,7 +42,7 @@ const Todo = {
 	}
 }
 
-const TodoApp = Vue.createApp(Todo)
+const TodoApp = Vue.createApp(TodoOpt)
 TodoApp.component('todo-comp', {
 	props: [
 		'data'
