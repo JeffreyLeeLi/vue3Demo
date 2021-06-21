@@ -9,7 +9,7 @@
 	<body>
 		<div id="hello">
 			<ul>
-				<li v-for="(value, name) in dataObj">{{name}}:{{value}}</li>
+				<li v-for="(value, name, index) in dataObj">{{index}}-{{name}}:{{value}}</li>
 			</ul>
 			<input v-model="message" />
 			<br>
